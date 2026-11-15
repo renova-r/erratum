@@ -1,39 +1,18 @@
-<div align="center">
+# erratum
 
-<img src="docs/src/.vuepress/public/erratum-logo.png" height="200px" />
+Provides helpers to handle and format error and warning messages elegantly.
 
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/devOpifex/erratum/workflows/R-CMD-check/badge.svg)](https://github.com/devOpifex/erratum/actions)
-[![Coveralls test coverage](https://coveralls.io/repos/github/devOpifex/erratum/badge.svg)](https://coveralls.io/github/devOpifex/erratum)
-<!-- badges: end -->
+Compatibility updates by Renova.
 
-[Docs](https://erratum.opifex.org) | [Quick start](https://erratum.opifex.org/guide/get-started.html) | [Install](https://erratum.opifex.org/guide/installation.html)
+Version 2.2.0.9001: Added an explicit R6 R6Class import in NAMESPACE and the corresponding roxygen @importFrom tag in R/issue.R, ensuring the R6 class dependency is declared.
 
-</div>
-
-Erratum handles errors and warnings in a manner inspired by Go's standard error library.
+## Install
 
 ```r
-install.packages("erratum")
+install.packages("remotes")
+remotes::install_github("renova-r/erratum@renova-2.2.0.9001")
 ```
 
-## Example
+[Release notes](NEWS.md) · [Renova package directory](https://github.com/renova-r/revival-catalog)
 
-```r
-library(erratum)
-
-err <- e("Input must be a numeric")
-err$rule <- is.numeric
-
-safe_log <- function(x){
-  err$check(x)
-
-  log(x)
-}
-
-safe_log("two")
-```
-
-## Code of Conduct
-
-Please note that the erratum project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+Originally authored and maintained by John Coene. License: AGPL-3. See [COPYING](COPYING).

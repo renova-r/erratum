@@ -1,6 +1,6 @@
 Package: erratum
 Title: Handle Error and Warning Messages
-Version: 2.2.0
+Version: 2.2.0.9001
 Authors@R: 
   c(
     person(given = "John",
@@ -12,6 +12,7 @@ Authors@R:
            email = "john@opifex.org")
   )
 Description: Elegantly handle error and warning messages.
+    Compatibility updates by Renova.
 License: AGPL-3
 Encoding: UTF-8
 RoxygenNote: 7.1.2

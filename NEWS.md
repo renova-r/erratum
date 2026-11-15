@@ -1,30 +1,7 @@
-# erratum 2.2.0
+# erratum 2.2.0.9001
 
-- Renamed `jab` to `bash`
-- Remove deprecated `enforce`
-- Add tests
+Renova release based on CRAN erratum 2.2.0.
 
-# erratum 2.1.0
-
-- Deprecate `enforce` in favour of `resolve`, much easier to memorise
-- Ability to retrieve the call wherefrom the issue originates (from the `call` field)
-- `e` and `w` capture the name of the parent function from which they are called
-- Added `raiser` to change the `raise` method.
-- `raise.e` and `raise.w` to define global `raise` methods
-- Added `is.problem` to check whether the object is an error or a warning
-- Fix `jab` when warning or error use a function.
-
-# erratum 2.0.0
-
-- Rename the package from err to erratum: err is already on CRAN.
-- Rename `latche`, and `latchw` to `latch.e`, and `latch.w`.
-- Add `return` method for error escalation.
-
-# erratum 1.0.1
-
-- Add `latche`, and `latchw` to latch errors and warnings onto object to later `enforce` them.
-- Added `defer_enforce` to defer the enforce to when the function exits.
-
-# erratum 1.0.0
-
-* Initial version
+- NAMESPACE now imports R6Class from R6.
+- R/issue.R gained @importFrom R6 R6Class.
+- Release metadata: Renova version and attribution; README and license text; stale MD5 removed.

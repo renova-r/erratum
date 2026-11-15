@@ -13,7 +13,8 @@
 #' the error message (character vector).
 #' 
 #' @importFrom rlang expr eval_bare
-#' 
+#' @importFrom R6 R6Class
+#'
 #' @export
 Issue <- R6::R6Class(
   "Issue",
